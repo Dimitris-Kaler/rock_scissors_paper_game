@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock scissors paper game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ROCK-SCISSORS-PAPER GAME</h1>
+    </header>
+    <div class="startGame">
+        <label>Choose Wins Per Game:<input type="number" id="gameLength"></label>
+    </div>
+
+    <div id="resultWinningMessage">
+        <p>CONGRATULATIONS!!!</p>
+        <p>YOU WIN!!!</p>
+
+        <button class="reset">Play Again</button>
+    </div>
+    <div id="resultLostMessage">
+        <p>GAME OVER!!!</p>
+        <p>YOU LOST!!!</p>
+
+        <button class="reset">Play Again</button>
+    </div>
+
+
+    <div id=container>
+        <div id="selection" class="item">
+            <select>
+                <option value="rock">ROCK</option>
+                <option value="scissors">SCISSORS</option>
+                <option value="paper">PAPER</option>
+            </select>
+
+            <button id="button">Choose</button>
+        </div>
+
+        <div id="myChoice" class="item show">
+
+
+        </div>
+
+        <div id="randomChoice" class="item show">
+
+
+
+
+
+        </div>
+        <div id="player1score" class="item choice">
+        </div>
+        <div id="computerScore" class="item choice">
+        </div>
+        <div id="comparison" class="item">
+
+        </div>
+        <div class="scores playerScore">
+            <p>YOUR SCORE IS:<span class="playerWinning">0</span></p>
+        </div>
+        <div class="scores comScore">
+            <p>COM SCORE IS:<span class="comWinning">0</span></p>
+        </div>
+
+
+
+
+    </div>
+
+
+  
+<script src="script.js"></script>
+</body>
+
+</html>
